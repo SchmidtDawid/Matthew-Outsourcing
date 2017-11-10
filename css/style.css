@@ -1,10 +1,98 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background: #00649e;
+  background: #f7fbff;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #f7fbff;
+}
+
+header .contact-header {
+  color: #08306b;
+  background-color: #f7fbff;
+}
+
+header .contact-header .container-fluid:first-child {
+  padding: 0;
+}
+
+header .contact-header .container-fluid:first-child h1 {
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 35px;
+}
+
+header .contact-header .container-fluid:last-child {
+  text-align: right;
+}
+
+header .contact-header .container-fluid:last-child h3 {
+  color: #08306b;
+  font-size: 20px;
+  padding: 5px;
+  padding-right: 50px;
+}
+
+header nav {
+  font-size: 16px;
+  background-color: #08306b;
+  height: 70px;
+}
+
+header nav .navbar-brand {
+  display: none;
+}
+
+header nav .navbar-nav {
+  padding-left: 13px;
+}
+
+header nav a {
+  color: #f7fbff;
+  text-transform: uppercase;
+  height: 70px;
+  line-height: 55px;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+header nav a:hover {
+  color: #f7fbff;
+  background-color: #2171b5;
+}
+
+header .head-image {
+  background-color: black;
+  background-image: url("../img/doradca_przy_stole.jpeg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+header .head-image .blend {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header .head-image .blend .container {
+  padding: 30px;
+  color: #f7fbff;
+  background-color: transparent;
+}
+
+header .head-image .blend .container h2, header .head-image .blend .container h4, header .head-image .blend .container h5 {
+  padding: 20px;
+}
+
+header .head-image .blend .container button {
+  margin: 20px;
 }
  
 

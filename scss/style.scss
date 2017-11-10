@@ -1,11 +1,87 @@
 @import 'variables';
-
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background: $background;
+body {
+    background: $blue_palette_1;
+    font-family: 'Lato', sans-serif;
+}
 
+header {
+    background-color: $blue_palette_1;
+    .contact-header {
+        color: $blue_palette_9;
+        background-color: $blue_palette_1;
+        .container-fluid:first-child {  
+            padding: 0; 
+            h1 {
+                font-size: 30px;
+                padding-top: 20px; 
+                text-align: left;
+                padding-left: 35px;
+            }
+        }
+        .container-fluid:last-child {
+            text-align: right;
+            h3 {
+                color: $blue_palette_9;
+                font-size: 20px;
+                padding: 5px;
+                padding-right: 50px;
+            }
+        }
+    }
+    nav {
+        font-size: 16px;
+        background-color: $blue_palette_9;
+        height: 70px;
+        .navbar-brand {
+            display: none;
+        }
+
+        .navbar-nav{
+            padding-left: 13px;
+            .nav-item{
+            }
+         }
+
+        a {
+            color: $blue_palette_1;
+            text-transform: uppercase;
+            height: 70px;
+            line-height: 55px;
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+        a:hover {
+            color: $blue_palette_1;
+            background-color: $blue_palette_7;
+            
+        }
+    }
+    .head-image {
+        background-color: black;
+        background-image: url("../img/doradca_przy_stole.jpeg");
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        .blend{
+            background-color: rgba(0, 0, 0, 0.4);
+        .container{
+            padding: 30px;
+            color: $blue_palette_1;
+            background-color: transparent;
+            h2, h4, h5{
+                padding: 20px;
+            }
+
+            button{
+                margin: 20px;
+            }
+        }
+    }
+    }
 }
