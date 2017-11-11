@@ -8,6 +8,7 @@
 body {
     background: $blue_palette_1;
     font-family: 'Lato', sans-serif;
+    letter-spacing: 1.5px;
 }
 
 header {
@@ -15,21 +16,21 @@ header {
     .contact-header {
         color: $blue_palette_9;
         background-color: $blue_palette_1;
-        .container-fluid:first-child {  
+        .brand {  
             padding: 0; 
             h1 {
                 font-size: 30px;
                 padding-top: 20px; 
                 text-align: left;
-                padding-left: 35px;
+                padding-left: 32px;
             }
         }
-        .container-fluid:last-child {
+        .header-contact {
             text-align: right;
+            padding: 12px 0 8px 0;
             h3 {
                 color: $blue_palette_9;
                 font-size: 20px;
-                padding: 5px;
                 padding-right: 50px;
             }
         }
@@ -44,8 +45,6 @@ header {
 
         .navbar-nav{
             padding-left: 13px;
-            .nav-item{
-            }
          }
 
         a {
@@ -76,12 +75,105 @@ header {
             background-color: transparent;
             h2, h4, h5{
                 padding: 20px;
+                margin-right: 30vw;
+                line-height: 2;
             }
 
             button{
+                display: block;
                 margin: 20px;
+                font-size: 20px;
+                padding: 12px;
+                border-radius: 15px;
+            }
+            button:hover{
+                color: $blue_palette_9;
+                font-weight: 700;
             }
         }
     }
     }
+}
+
+.services{
+    margin-bottom: 50px;
+    .service-1, .service-2, .service-3{
+        margin-top: 20px;
+        color: $blue_palette_9;
+        padding: 30px;
+        h2{
+            padding: 30px;
+            padding-left: 0px;
+            margin: 0;
+            text-align: left;
+            font-size: 40px;
+            letter-spacing: 5px;
+            span{
+                margin-right: 10px;
+                text-shadow: 4px 4px .3px rgba(8, 82, 156, 0.623);
+            }
+        }
+        p{
+            color: $blue_palette_8;            
+            text-align: justify;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        button{
+            display: block;
+            border: 2px solid $blue_palette_8;
+            color: $blue_palette_8;
+            border-radius: 15px;
+            font-weight: 700;
+            padding: 12px;
+            font-size: 18px;
+            margin: 0 auto;
+        }
+
+        button:hover{
+            background-color: $blue_palette_9;
+            color: $blue_palette_1;
+            cursor: pointer;
+        }
+    }
+}
+
+.about{
+    background-color: black;
+    background-image: url("../img/buildings.jpeg");
+    background-size: 100%;
+    background-attachment: fixed;
+    .blend{
+        background-color: rgba(4, 15, 31, 0.8);
+
+        h2{
+            margin: 90px 0 50px 0;
+            color: $blue_palette_1;
+        }
+        
+        h3{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 2;
+            letter-spacing: 5px;
+            color: $blue_palette_1;  
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 5px;
+            color: $blue_palette_1;
+            padding: 50px 0;
+        }
+
+        .about-img{
+            border-radius: 15px;
+            box-shadow: 12px 12px 0px 0 $blue_palette_7;
+            display: block;
+            margin: 90px auto;
+            
+        }
+    }
+    
 }

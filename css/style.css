@@ -8,6 +8,7 @@
 body {
   background: #f7fbff;
   font-family: 'Lato', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 header {
@@ -19,25 +20,25 @@ header .contact-header {
   background-color: #f7fbff;
 }
 
-header .contact-header .container-fluid:first-child {
+header .contact-header .brand {
   padding: 0;
 }
 
-header .contact-header .container-fluid:first-child h1 {
+header .contact-header .brand h1 {
   font-size: 30px;
   padding-top: 20px;
   text-align: left;
-  padding-left: 35px;
+  padding-left: 32px;
 }
 
-header .contact-header .container-fluid:last-child {
+header .contact-header .header-contact {
   text-align: right;
+  padding: 12px 0 8px 0;
 }
 
-header .contact-header .container-fluid:last-child h3 {
+header .contact-header .header-contact h3 {
   color: #08306b;
   font-size: 20px;
-  padding: 5px;
   padding-right: 50px;
 }
 
@@ -89,10 +90,109 @@ header .head-image .blend .container {
 
 header .head-image .blend .container h2, header .head-image .blend .container h4, header .head-image .blend .container h5 {
   padding: 20px;
+  margin-right: 30vw;
+  line-height: 2;
 }
 
 header .head-image .blend .container button {
+  display: block;
   margin: 20px;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+header .head-image .blend .container button:hover {
+  color: #08306b;
+  font-weight: 700;
+}
+
+.services {
+  margin-bottom: 50px;
+}
+
+.services .service-1, .services .service-2, .services .service-3 {
+  margin-top: 20px;
+  color: #08306b;
+  padding: 30px;
+}
+
+.services .service-1 h2, .services .service-2 h2, .services .service-3 h2 {
+  padding: 30px;
+  padding-left: 0px;
+  margin: 0;
+  text-align: left;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.services .service-1 h2 span, .services .service-2 h2 span, .services .service-3 h2 span {
+  margin-right: 10px;
+  text-shadow: 4px 4px 0.3px rgba(8, 82, 156, 0.623);
+}
+
+.services .service-1 p, .services .service-2 p, .services .service-3 p {
+  color: #08519c;
+  text-align: justify;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.services .service-1 button, .services .service-2 button, .services .service-3 button {
+  display: block;
+  border: 2px solid #08519c;
+  color: #08519c;
+  border-radius: 15px;
+  font-weight: 700;
+  padding: 12px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.services .service-1 button:hover, .services .service-2 button:hover, .services .service-3 button:hover {
+  background-color: #08306b;
+  color: #f7fbff;
+  cursor: pointer;
+}
+
+.about {
+  background-color: black;
+  background-image: url("../img/buildings.jpeg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.about .blend {
+  background-color: rgba(4, 15, 31, 0.8);
+}
+
+.about .blend h2 {
+  margin: 90px 0 50px 0;
+  color: #f7fbff;
+}
+
+.about .blend h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 5px;
+  color: #f7fbff;
+}
+
+.about .blend p {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 5px;
+  color: #f7fbff;
+  padding: 50px 0;
+}
+
+.about .blend .about-img {
+  border-radius: 15px;
+  -webkit-box-shadow: 12px 12px 0px 0 #2171b5;
+          box-shadow: 12px 12px 0px 0 #2171b5;
+  display: block;
+  margin: 90px auto;
 }
  
 
