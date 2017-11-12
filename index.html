@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
+    <div class="nav-spacing"></div>
     <section id="contact-header">
       <div class="contact-header container">
         <div class="row">
@@ -32,7 +33,7 @@
         </div>
       </div>
     </section>
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-sm" id="main-nav">
       <div class="container">
         <a class="navbar-brand" href="#">Matthew Outsourcing</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -47,7 +48,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Zakres usług</a>
+              <a class="nav-link" href="#about">Zakres usług</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">O nas</a>
@@ -121,17 +122,17 @@
       <div class="blend">
         <div class="container">
           <div class="row">
-          <div class="col-md-7 about-describe">
+            <div class="col-md-7 about-describe">
               <h2>O mnie</h2>
               <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat officia nam saepe quisquam.
               </h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat officia nam saepe quisquam. Dolorem excepturi,
-                  debitis totam, hic vero aperiam et alias quam quis numquam voluptatibus dignissimos unde distinctio in.</p>
+                debitis totam, hic vero aperiam et alias quam quis numquam voluptatibus dignissimos unde distinctio in.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="img/steve.jpg" class="img-fluid about-img">
+            </div>
           </div>
-          <div class="col-md-5">
-            <img src="img/steve.jpg" class="img-fluid about-img">
-          </div>
-        </div>
         </div>
       </div>
     </section>
@@ -158,6 +159,20 @@
       <br>
     </div>
   </main>
+  <div class="contact-notification">
+    <div class="contact-n-button">
+      <span class="icon-address-book-o"> KONTAKT
+    </div>
+    <div class="contact-n-text">
+      <h5>
+        <span class="icon-phone"></span> 600 600 600</h5>
+      <h5>
+        <span class="icon-mail"></span> MatthewIsPro@gmail.com</h5>
+    </div>
+  </div>
+  <div class="scroll-up-button nav-item">
+    <a href="#header">^</a>
+  </div>
 
   <!--Java Script-->
   <script src="js/jquery-3.2.1.min.js"></script>

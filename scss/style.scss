@@ -11,6 +11,11 @@ body {
     letter-spacing: 1.5px;
 }
 
+.nav-spacing{
+    height: 70px;
+    display: none;
+}
+
 header {
     background-color: $blue_palette_1;
     .contact-header {
@@ -131,7 +136,7 @@ header {
         }
 
         button:hover{
-            background-color: $blue_palette_9;
+            background-color: $blue_palette_8;
             color: $blue_palette_1;
             cursor: pointer;
         }
@@ -147,7 +152,8 @@ header {
         background-color: rgba(4, 15, 31, 0.8);
 
         h2{
-            margin: 90px 0 50px 0;
+            font-size: 50px;
+            margin: 100px 0 50px 0;
             color: $blue_palette_1;
         }
         
@@ -168,12 +174,80 @@ header {
         }
 
         .about-img{
-            border-radius: 15px;
-            box-shadow: 12px 12px 0px 0 $blue_palette_7;
+            border-radius: 18px;
+            box-shadow: 10px 15px 0px 0 $blue_palette_6;
             display: block;
-            margin: 90px auto;
-            
+            margin: 100px auto;
+            height: 450px;
+            width: 380px;
         }
     }
     
+}
+
+.contact-notification{
+    background-color: $blue_palette_8;
+    width: 400px;
+    display: flex;
+    position: fixed;
+    bottom: calc(50vh - 100px);
+    right: -406px;
+    color: $blue_palette_1;
+    transition: ease .7s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    .contact-n-button{
+        width:50px;
+        writing-mode: vertical-rl;
+        //text-orientation: upright;
+        padding: 12px;
+        letter-spacing: 5px;
+    }
+    .contact-n-text{
+        padding: 12px;
+        h5{
+            text-align: center;
+            padding: 20px 5px;;
+        }
+        h5:first-child{
+            text-align: center;
+            padding: 20px 7px;
+            font-size: 26px;
+        }
+    }
+}
+
+.contact-notification:hover{
+    transform: translateX(-350px)
+}
+
+.scroll-up-button{
+    background-color: $blue_palette_8;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: calc(50vh - 155px);
+    right: -56px;
+    color: $blue_palette_1;
+    transition: all ease .7s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    font-size: 40px;
+    padding: 2px;
+    padding-left: 15px;
+    z-index: 99;
+    a{
+        text-decoration: none;
+        color: $blue_palette_1;
+    }
+}
+
+.scroll-up-button:hover{
+    background-color: $blue_palette_5;
+    cursor: pointer;
+    color: $blue_palette_1; 
+    z-index: 101;
 }
