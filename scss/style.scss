@@ -42,24 +42,29 @@ header {
         }
     }
     nav {
+        background-color: $blue_palette_9 !important;
         font-size: 16px;
-        background-color: $blue_palette_9;
         height: 70px;
         .navbar-brand {
             display: none;
         }
 
+        .navbar-toggler-icon{
+            
+        }
         .navbar-nav{
-            padding-left: 13px;
-         }
-
+            margin: 0 auto;
+        }
         a {
+            color: $blue_palette_1 !important;
+            background-color: $blue_palette_9;
             color: $blue_palette_1;
             text-transform: uppercase;
             height: 70px;
             line-height: 55px;
             padding-left: 20px !important;
             padding-right: 20px !important;
+            transition: all ease .4s;
         }
         a:hover {
             color: $blue_palette_1;

@@ -26,7 +26,7 @@ window.addEventListener("scroll", function(e){
 })
 
 
-$('.nav-item a[href*="#"]')
+$('.nav-item')
 // Remove links that don't actually link to anything
 .not('[href="#"]')
 .not('[href="#0"]')

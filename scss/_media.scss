@@ -69,7 +69,12 @@
         }
     }
 
+    nav { 
+        a {
+            background-color: rgba(8, 49, 107, 0.9) !important;
+        }
 }  
+}
 
 
 @media (max-width: 1199px) {
@@ -101,29 +106,4 @@
             }
         }
     }
-    nav {
-        font-size: 16px;
-        background-color: $blue_palette_9;
-        height: 70px;
-        .navbar-brand {
-            display: none;
-        }
-
-        .navbar-nav{
-            padding-left: 13px;
-         }
-
-        a {
-            color: $blue_palette_1;
-            text-transform: uppercase;
-            height: 70px;
-            line-height: 55px;
-            padding-left: 20px !important;
-            padding-right: 20px !important;
-        }
-        a:hover {
-            color: $blue_palette_1;
-            background-color: $blue_palette_7;
-        }
-    }
- }
+}

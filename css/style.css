@@ -48,8 +48,8 @@ header .contact-header .header-contact h3 {
 }
 
 header nav {
+  background-color: #08306b !important;
   font-size: 16px;
-  background-color: #08306b;
   height: 70px;
 }
 
@@ -58,16 +58,20 @@ header nav .navbar-brand {
 }
 
 header nav .navbar-nav {
-  padding-left: 13px;
+  margin: 0 auto;
 }
 
 header nav a {
+  color: #f7fbff !important;
+  background-color: #08306b;
   color: #f7fbff;
   text-transform: uppercase;
   height: 70px;
   line-height: 55px;
   padding-left: 20px !important;
   padding-right: 20px !important;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 header nav a:hover {
@@ -399,6 +403,9 @@ footer {
   .contact .map h2 {
     display: none;
   }
+  nav a {
+    background-color: rgba(8, 49, 107, 0.9) !important;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -414,29 +421,6 @@ footer {
   }
   .contact .contact-big div h3 {
     font-size: 24px;
-  }
-  nav {
-    font-size: 16px;
-    background-color: #08306b;
-    height: 70px;
-  }
-  nav .navbar-brand {
-    display: none;
-  }
-  nav .navbar-nav {
-    padding-left: 13px;
-  }
-  nav a {
-    color: #f7fbff;
-    text-transform: uppercase;
-    height: 70px;
-    line-height: 55px;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-  nav a:hover {
-    color: #f7fbff;
-    background-color: #2171b5;
   }
 }
  
