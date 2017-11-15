@@ -1,0 +1,129 @@
+@media (max-width: 575px) {
+    header {
+        .contact-header {
+            .brand {  
+                h1 {
+                    font-size: 20px;
+                    text-align: center;
+                    padding-left: 0;                }
+            }
+            .header-contact {
+                text-align: center;
+                h3 {
+                   // font-size: 15px;
+                    
+                    padding-right: 0;
+                    span{
+                        
+                   }
+                }
+            }
+        }
+    }
+    .contact .contact-big{
+        h2{
+        }
+        div{
+            max-width: 500px;
+            margin: 0 auto;
+            h3 {
+                font-size: 18px !important;
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+ }
+
+
+@media (max-width: 768px) {
+
+ }
+
+
+@media (max-width: 991px) {
+    header {
+        .contact-header {
+            .brand {  
+                h1 {
+                    text-align: center;
+                    padding-left: 0;                }
+            }
+            .header-contact {
+                text-align: center;
+                h3 {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .contact{
+        margin-bottom: 50px;
+        .map{
+            h2{
+                display: none;
+            }
+            padding: 20px;        	
+        }
+    }
+
+}  
+
+
+@media (max-width: 1199px) {
+    .services{
+        .service-1, .service-2, .service-3{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                font-size: 18px;
+            }
+            button{
+            }
+            button:hover{
+            }
+        }
+    }
+    
+    .contact .contact-big{
+        h2{
+        }
+        div{
+            max-width: 500px;
+            margin: 0 auto;
+            h3 {
+                font-size: 24px;
+                span{
+                }
+            }
+        }
+    }
+    nav {
+        font-size: 16px;
+        background-color: $blue_palette_9;
+        height: 70px;
+        .navbar-brand {
+            display: none;
+        }
+
+        .navbar-nav{
+            padding-left: 13px;
+         }
+
+        a {
+            color: $blue_palette_1;
+            text-transform: uppercase;
+            height: 70px;
+            line-height: 55px;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        a:hover {
+            color: $blue_palette_1;
+            background-color: $blue_palette_7;
+        }
+    }
+ }

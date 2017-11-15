@@ -1,4 +1,5 @@
 @import 'variables';
+
 * {
     padding: 0;
     margin: 0;
@@ -57,13 +58,12 @@ header {
             text-transform: uppercase;
             height: 70px;
             line-height: 55px;
-            padding-left: 25px !important;
-            padding-right: 25px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
         }
         a:hover {
             color: $blue_palette_1;
             background-color: $blue_palette_7;
-            
         }
     }
     .head-image {
@@ -126,12 +126,12 @@ header {
         }
         button{
             display: block;
-            border: 2px solid $blue_palette_8;
+            border: 1px solid $blue_palette_8;
             color: $blue_palette_8;
             border-radius: 15px;
-            font-weight: 700;
+            font-weight: 400;
             padding: 12px;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 auto;
         }
 
@@ -219,6 +219,65 @@ header {
     }
 }
 
+.contact{
+    margin-bottom: 50px;
+.map{
+    padding: 30px;
+    padding-top: 100px; 
+    
+    h2{
+        font-size: 50px;
+        text-align: center;
+        color: transparent;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    div{
+        width: 500px;
+        margin: 0 auto;
+        iframe{
+            border-radius: 20px;
+        }
+    }
+}
+
+    .contact-big{
+        padding: 30px;
+        padding-top: 100px; 
+        
+        h2{
+            font-size: 50px;
+            text-align: left;
+            color: $blue_palette_9;
+            font-weight: 700;
+            margin-bottom: 60px;
+        }
+        div{
+            background-color: $blue_palette_3;
+            border-radius: 20px;
+            padding: 20px;
+            padding-bottom: 30px;
+        h3 {
+            text-align: center;
+            font-size: 32px;
+            color: $blue_palette_9;
+            padding: 20px;
+            line-height: 16px;
+            font-weight: 700;
+            span{
+                color: black;
+                font-size: 20px;
+                display: block;
+                padding: 0;
+                line-height: 0;
+                font-weight: 400;
+            }
+        }
+    }
+    }
+}
+
 .contact-notification:hover{
     transform: translateX(-350px)
 }
@@ -251,3 +310,13 @@ header {
     color: $blue_palette_1; 
     z-index: 101;
 }
+
+footer{
+    background-color: $blue_palette_9;
+    color: $blue_palette_1;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+@import 'media';

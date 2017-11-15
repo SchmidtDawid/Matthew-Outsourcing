@@ -66,8 +66,8 @@ header nav a {
   text-transform: uppercase;
   height: 70px;
   line-height: 55px;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 header nav a:hover {
@@ -145,12 +145,12 @@ header .head-image .blend .container button:hover {
 
 .services .service-1 button, .services .service-2 button, .services .service-3 button {
   display: block;
-  border: 2px solid #08519c;
+  border: 1px solid #08519c;
   color: #08519c;
   border-radius: 15px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 12px;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 auto;
 }
 
@@ -246,6 +246,70 @@ header .head-image .blend .container button:hover {
   font-size: 26px;
 }
 
+.contact {
+  margin-bottom: 50px;
+}
+
+.contact .map {
+  padding: 30px;
+  padding-top: 100px;
+}
+
+.contact .map h2 {
+  font-size: 50px;
+  text-align: center;
+  color: transparent;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.contact .map div {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contact .map div iframe {
+  border-radius: 20px;
+}
+
+.contact .contact-big {
+  padding: 30px;
+  padding-top: 100px;
+}
+
+.contact .contact-big h2 {
+  font-size: 50px;
+  text-align: left;
+  color: #08306b;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.contact .contact-big div {
+  background-color: #c6dbef;
+  border-radius: 20px;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.contact .contact-big div h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #08306b;
+  padding: 20px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.contact .contact-big div h3 span {
+  color: black;
+  font-size: 20px;
+  display: block;
+  padding: 0;
+  line-height: 0;
+  font-weight: 400;
+}
+
 .contact-notification:hover {
   -webkit-transform: translateX(-350px);
           transform: translateX(-350px);
@@ -281,6 +345,99 @@ header .head-image .blend .container button:hover {
   cursor: pointer;
   color: #f7fbff;
   z-index: 101;
+}
+
+footer {
+  background-color: #08306b;
+  color: #f7fbff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 575px) {
+  header .contact-header .brand h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0;
+  }
+  header .contact-header .header-contact {
+    text-align: center;
+  }
+  header .contact-header .header-contact h3 {
+    padding-right: 0;
+  }
+  .contact .contact-big div {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contact .contact-big div h3 {
+    font-size: 18px !important;
+  }
+  .contact .contact-big div h3 span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  header .contact-header .brand h1 {
+    text-align: center;
+    padding-left: 0;
+  }
+  header .contact-header .header-contact {
+    text-align: center;
+  }
+  header .contact-header .header-contact h3 {
+    padding-right: 0;
+  }
+  .contact {
+    margin-bottom: 50px;
+  }
+  .contact .map {
+    padding: 20px;
+  }
+  .contact .map h2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .services .service-1 h2, .services .service-2 h2, .services .service-3 h2 {
+    font-size: 30px;
+  }
+  .services .service-1 p, .services .service-2 p, .services .service-3 p {
+    font-size: 18px;
+  }
+  .contact .contact-big div {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contact .contact-big div h3 {
+    font-size: 24px;
+  }
+  nav {
+    font-size: 16px;
+    background-color: #08306b;
+    height: 70px;
+  }
+  nav .navbar-brand {
+    display: none;
+  }
+  nav .navbar-nav {
+    padding-left: 13px;
+  }
+  nav a {
+    color: #f7fbff;
+    text-transform: uppercase;
+    height: 70px;
+    line-height: 55px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  nav a:hover {
+    color: #f7fbff;
+    background-color: #2171b5;
+  }
 }
  
 
