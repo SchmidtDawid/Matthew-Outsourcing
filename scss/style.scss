@@ -74,24 +74,31 @@ header {
     .head-image {
         background-color: black;
         background-image: url("../img/doradca_przy_stole.jpeg");
-        background-size: 100%;
-        background-position: center center;
+        background-position: center top;
         background-repeat: no-repeat;
+        background-size: 100%;
         .blend{
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.7);
         .container{
             padding: 30px;
             color: $blue_palette_1;
             background-color: transparent;
-            h2, h4, h5{
-                padding: 20px;
-                margin-right: 30vw;
+                h2{
+                    text-align: center;
+                    line-height: 1.5;
+                    font-size: 50px;
+                }
+            h4, h5{
+                text-align: center;
                 line-height: 2;
+                padding: 20px 90px;
             }
+            h4{
 
+            }
             button{
                 display: block;
-                margin: 20px;
+                margin: 20px auto;
                 font-size: 20px;
                 padding: 12px;
                 border-radius: 15px;
@@ -102,7 +109,7 @@ header {
             }
         }
     }
-    }
+}
 }
 
 .services{

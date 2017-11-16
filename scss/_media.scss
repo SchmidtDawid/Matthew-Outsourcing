@@ -3,9 +3,9 @@
         .contact-header {
             .brand {  
                 h1 {
-                    font-size: 20px;
                     text-align: center;
-                    padding-left: 0;                }
+                    padding-left: 0;
+                }
             }
             .header-contact {
                 text-align: center;
@@ -19,7 +19,33 @@
                 }
             }
         }
+        .head-image {
+            background-color: black;
+            background-image: url("../img/doradca_przy_stole.jpeg");
+            background-position: -300px center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .blend{
+                .container{
+                        h2{
+                            font-size: 38px;
+                        }
+                    h4{
+                    font-size: 20px;
+                    padding: 20px 40px; 
+                    display: none;
+                    }
+                    h5{
+                        font-size: 18px;
+                        padding: 20px 40px; 
+                        
+                    }
+                }        
+            } 
+        }  
+        
     }
+
     .contact .contact-big{
         h2{
         }
@@ -34,21 +60,17 @@
             }
         }
     }
- }
+}
 
 
-@media (max-width: 768px) {
-
- }
-
-
-@media (max-width: 991px) {
+@media (max-width: 768px) and (min-width: 576px) {
     header {
         .contact-header {
             .brand {  
                 h1 {
                     text-align: center;
-                    padding-left: 0;                }
+                    padding-left: 0;
+                }
             }
             .header-contact {
                 text-align: center;
@@ -57,8 +79,73 @@
                 }
             }
         }
+        .head-image {
+            background-color: black;
+            background-image: url("../img/doradca_przy_stole.jpeg");
+            background-position: -250px top;
+            background-repeat: no-repeat;
+            background-size: 160%;
+            .blend{
+                .container{
+                        h2{
+                            font-size: 38px;
+                        }
+                    h4{
+                    font-size: 20px;
+                    padding: 20px 40px; 
+                    display: none;
+                    }
+                    h5{
+                        font-size: 18px;
+                        padding: 20px 40px; 
+                        
+                    }
+                }        
+            } 
+        }  
     }
+}
 
+@media (max-width: 991px) and (min-width: 769px) {
+    header {
+        .contact-header {
+            .brand {  
+                h1 {
+                    text-align: center;
+                    padding-left: 0;
+                }
+            }
+            .header-contact {
+                text-align: center;
+                h3 {
+                    padding-right: 0;
+                }
+            }
+        }
+        .head-image {
+            background-color: black;
+            background-image: url("../img/doradca_przy_stole.jpeg");
+            background-position: -450px top;
+            background-repeat: no-repeat;
+            background-size: 170%;
+            .blend{
+                .container{
+                        h2{
+                            font-size: 46px;
+                        }
+                    h4{
+                    font-size: 20px;
+                    padding: 20px 40px; 
+                    }
+                    h5{
+                        font-size: 18px;
+                        padding: 20px 40px; 
+                        
+                    }
+                }        
+            } 
+        }  
+    } 
     .contact{
         margin-bottom: 50px;
         .map{
@@ -69,15 +156,69 @@
         }
     }
 
+    
+}
+
+@media (max-width: 991px){
     nav { 
         a {
             background-color: rgba(8, 49, 107, 0.9) !important;
         }
-}  
+    }
 }
 
+@media (max-width: 1199px) and (min-width: 992px){
+header{
+    .head-image {
+        background-color: black;
+        background-image: url("../img/doradca_przy_stole.jpeg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 120%;
+        .blend{
+            .container{
+                    h2{
+                        font-size: 46px;
+                    }
+                h4{
+                font-size: 20px;
+                padding: 20px 40px; 
+                }
+                h5{
+                    font-size: 18px;
+                    padding: 20px 40px; 
+                    
+                }
+            }        
+        } 
+    }  
+} 
+    nav {
+        font-size: 16px;
+        background-color: $blue_palette_9;
+        height: 70px;
+        .navbar-brand {
+            display: none;
+        }
 
-@media (max-width: 1199px) {
+        .navbar-nav{
+            padding-left: 13px;
+         }
+
+        a {
+            color: $blue_palette_1;
+            text-transform: uppercase;
+            height: 70px;
+            line-height: 55px;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        a:hover {
+            color: $blue_palette_1;
+            background-color: $blue_palette_7;
+        }
+    }
+
     .services{
         .service-1, .service-2, .service-3{
             h2{
@@ -106,4 +247,4 @@
             }
         }
     }
-}
+ }
