@@ -20,7 +20,13 @@ header {
   background-color: #f7fbff;
 }
 
+header img {
+  height: 78.18px;
+  padding-left: 30px;
+}
+
 header .contact-header {
+  font-family: 'Vollkorn SC', serif;
   color: #08306b;
   background-color: #f7fbff;
 }
@@ -47,10 +53,14 @@ header .contact-header .header-contact h3 {
   padding-right: 50px;
 }
 
+header .navbar {
+  padding: 0 !important;
+}
+
 header nav {
   background-color: #08306b !important;
   font-size: 16px;
-  height: 70px;
+  font-family: 'Vollkorn SC', serif;
 }
 
 header nav .navbar-brand {
@@ -66,17 +76,38 @@ header nav a {
   background-color: #08306b;
   color: #f7fbff;
   text-transform: uppercase;
-  height: 70px;
-  line-height: 55px;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  height: 90px;
+  line-height: 78px;
+  padding-left: 23px !important;
+  padding-right: 23px !important;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
+  font-size: 18px;
 }
 
 header nav a:hover {
   color: #f7fbff;
   background-color: #2171b5;
+}
+
+header nav .brand-button {
+  display: none;
+}
+
+header .fixed-prop .navbar-nav a {
+  height: 70px !important;
+  line-height: 59px !important;
+  font-size: 16px !important;
+}
+
+header .fixed-prop .navbar-nav .brand-button {
+  display: block;
+}
+
+header .fixed-prop .navbar-nav .brand-button img {
+  padding: 12px 0;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 header .head-image {
@@ -480,6 +511,9 @@ footer {
 }
 
 @media (max-width: 991px) {
+  nav {
+    height: 60px;
+  }
   nav a {
     background-color: rgba(8, 49, 107, 0.9) !important;
   }
@@ -507,7 +541,6 @@ footer {
   nav {
     font-size: 16px;
     background-color: #08306b;
-    height: 70px;
   }
   nav .navbar-brand {
     display: none;
@@ -518,10 +551,8 @@ footer {
   nav a {
     color: #f7fbff;
     text-transform: uppercase;
-    height: 70px;
     line-height: 55px;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    font-size: 18px !important;
   }
   nav a:hover {
     color: #f7fbff;

@@ -8,11 +8,13 @@ let upButton = document.querySelector('.scroll-up-button');
 window.addEventListener("scroll", function(e){
     if(window.pageYOffset > 78.17){
         mainNav.classList.add('fixed-top');
+        mainNav.classList.add('fixed-prop');
         navSpacing.style.display = "block";
         contactButton.style.right = "-350px"
     }
     else{
         mainNav.classList.remove('fixed-top');
+        mainNav.classList.remove('fixed-prop');
         navSpacing.style.display = "none";
         contactButton.style.right = "-406px"
     }

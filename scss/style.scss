@@ -19,7 +19,13 @@ body {
 
 header {
     background-color: $blue_palette_1;
+    
+    img{
+        height: 78.18px;
+        padding-left: 30px;
+    }
     .contact-header {
+        font-family: 'Vollkorn SC', serif;        
         color: $blue_palette_9;
         background-color: $blue_palette_1;
         .brand {  
@@ -41,10 +47,13 @@ header {
             }
         }
     }
+    .navbar{
+        padding: 0 !important;
+    }
     nav {
         background-color: $blue_palette_9 !important;
         font-size: 16px;
-        height: 70px;
+        font-family: 'Vollkorn SC', serif;
         .navbar-brand {
             display: none;
         }
@@ -52,23 +61,45 @@ header {
         .navbar-toggler-icon{
             
         }
+        
         .navbar-nav{
             margin: 0 auto;
+            
         }
         a {
             color: $blue_palette_1 !important;
             background-color: $blue_palette_9;
             color: $blue_palette_1;
             text-transform: uppercase;
-            height: 70px;
-            line-height: 55px;
-            padding-left: 20px !important;
-            padding-right: 20px !important;
+            height: 90px;
+            line-height: 78px;
+            padding-left: 23px !important;
+            padding-right: 23px !important;
             transition: all ease .4s;
+            font-size: 18px;
         }
         a:hover {
             color: $blue_palette_1;
             background-color: $blue_palette_7;
+        }
+        .brand-button{
+            display: none;
+        }
+    }
+    .fixed-prop{
+        .navbar-nav{
+            a{
+                height: 70px !important;
+                line-height: 59px !important;
+                font-size: 16px !important;
+            } 
+            .brand-button{
+                display: block;
+                img{
+                    padding: 12px 0;
+                    transform: translateY(-5px)
+                }
+            }
         }
     }
     .head-image {
