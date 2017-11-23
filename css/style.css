@@ -511,6 +511,24 @@ footer {
 }
 
 @media (max-width: 991px) {
+  img {
+    height: 78.18px;
+    padding-left: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+  .navbar-toggler {
+    margin: 10px;
+  }
+  .navbar-brand {
+    display: block !important;
+    height: 60px;
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .navbar-brand img {
+    height: 55px;
+  }
   nav {
     height: 60px;
   }
