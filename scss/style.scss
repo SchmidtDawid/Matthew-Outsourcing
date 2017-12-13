@@ -54,6 +54,7 @@ header {
         background-color: $blue_palette_9 !important;
         font-size: 16px;
         font-family: 'Vollkorn SC', serif;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
         .navbar-brand {
            display: none;
         }
@@ -117,15 +118,14 @@ header {
                 h2{
                     text-align: center;
                     line-height: 1.5;
-                    font-size: 50px;
+                    font-size: 40px;
+                    padding: 50px 0;
                 }
             h4, h5{
                 text-align: center;
                 line-height: 2;
-                padding: 20px 90px;
-            }
-            h4{
-
+                padding: 20px 0px;
+                font-size: 30px;
             }
             button{
                 display: block;
@@ -189,10 +189,11 @@ header {
 .about{
     background-color: black;
     background-image: url("../img/buildings.jpeg");
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     .blend{
         background-color: rgba(4, 15, 31, 0.8);
+        padding-bottom: 50px;
 
         h2{
             font-size: 50px;
@@ -210,25 +211,36 @@ header {
 
         p{
             font-size: 18px;
-            line-height: 2;
+            line-height: 1.8;
             letter-spacing: 5px;
             color: $blue_palette_1;
-            padding: 50px 0;
+            padding: 20px 0;
+        }
+
+        a{
+            color: $blue_palette_1;
+            text-decoration: none;
+            margin: 0 auto;
+            display: block;
+            width: 110px;
+        }
+        a:hover{
+            color: $blue_palette_8;
         }
 
         .about-img{
             border-radius: 18px;
+            padding: 0;
             box-shadow: 10px 15px 0px 0 $blue_palette_6;
             display: block;
             margin: 100px auto;
-            height: 450px;
-            width: 380px;
         }
     }
     
 }
 
 .contact-notification{
+    font-family: 'Vollkorn SC', serif;    
     background-color: $blue_palette_8;
     width: 400px;
     display: flex;
@@ -247,17 +259,32 @@ header {
         //text-orientation: upright;
         padding: 12px;
         letter-spacing: 5px;
+        font-size: 18px;
+        margin-top: 12px;
     }
     .contact-n-text{
-        padding: 12px;
+        padding: 0;
+        span{
+            font-size: 32px;
+            padding-top: 12px;
+            text-align: center;
+            display: block;
+        }
         h5{
             text-align: center;
-            padding: 20px 5px;;
+            padding: 0;
         }
-        h5:first-child{
+        h5{
             text-align: center;
-            padding: 20px 7px;
-            font-size: 26px;
+            padding: 0;
+            font-size: 30px;
+        }
+        h5:last-child{
+            text-align: center;
+            padding: 0;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+            padding-bottom: 10px;
         }
     }
 }
@@ -308,14 +335,21 @@ header {
             padding: 20px;
             line-height: 16px;
             font-weight: 700;
-            span{
-                color: black;
-                font-size: 20px;
-                display: block;
-                padding: 0;
-                line-height: 0;
-                font-weight: 400;
-            }
+            
+
+        }
+        span{
+            color: black;
+            font-size: 20px;
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        h3:last-child{
+            letter-spacing: 0px;
+            font-size: 28px;
         }
     }
     }
@@ -360,6 +394,59 @@ footer{
     font-size: 14px;
     text-align: center;
     padding: 10px;
+}
+
+// ==========Services==========
+
+.services-element{
+    background-color: $blue_palette_9;
+    margin: 50px 0;
+    border-radius: 20px;
+    color: $blue_palette_1;
+    box-shadow: inset 5px 5px 20px 0 rgba(0, 0, 0, 1);
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    .blend{
+        background-color: rgba(1, 20, 48, 0.925);
+        padding: 30px;
+        border-radius: 20px;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+        text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    }
+    ol{
+        padding-left: 20px;
+        list-style: square;
+        li{
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 3px rgb(0, 0, 0);
+        }
+        ul{
+            padding: 0 20px;
+            list-style: disc;
+        }
+    }
+}
+.services-element:nth-child(1){
+    background-image: url("../img/ksiegowosc.jpeg");
+}
+.services-element:nth-child(2){
+    background-image: url("../img/kadry.jpeg");
+}
+.services-element:nth-child(3){
+    background-image: url("../img/bhp.jpeg");
+}
+
+.ddd{
+    margin: 0 auto;
+    display: block;
+    height: 400px;
 }
 
 @import 'media';
