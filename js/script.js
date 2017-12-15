@@ -2,21 +2,41 @@ let mainNav = document.getElementById('main-nav');
 let navSpacing = document.querySelector('.nav-spacing');
 let contactButton = document.querySelector('.contact-notification');
 let upButton = document.querySelector('.scroll-up-button');
+let brandButton = document.querySelector('.brand-button');
 
 
 
 window.addEventListener("scroll", function(e){
-    if(window.pageYOffset > 78.17){
-        mainNav.classList.add('fixed-top');
-        mainNav.classList.add('fixed-prop');
-        navSpacing.style.display = "block";
-        contactButton.style.right = "-350px"
+    if(window.innerWidth > 991){
+        if(window.pageYOffset > 78.17){
+            mainNav.classList.add('fixed-top');
+            mainNav.classList.add('fixed-prop');
+            navSpacing.style.display = "block";
+            contactButton.style.right = "-350px"
+            brandButton.style.display = "block"
+        }
+        else{
+            mainNav.classList.remove('fixed-top');
+            mainNav.classList.remove('fixed-prop');
+            navSpacing.style.display = "none";
+            contactButton.style.right = "-406px"
+            brandButton.style.display = "none"
+        }
     }
-    else{
-        mainNav.classList.remove('fixed-top');
-        mainNav.classList.remove('fixed-prop');
-        navSpacing.style.display = "none";
-        contactButton.style.right = "-406px"
+
+    if(window.innerWidth < 991){
+        if(window.pageYOffset > 160.17){
+            mainNav.classList.add('fixed-top');
+            mainNav.classList.add('fixed-prop');
+            navSpacing.style.display = "block";
+            contactButton.style.right = "-350px"
+        }
+        else{
+            mainNav.classList.remove('fixed-top');
+            mainNav.classList.remove('fixed-prop');
+            navSpacing.style.display = "none";
+            contactButton.style.right = "-406px"
+        }
     }
 
     if(window.pageYOffset > 800){

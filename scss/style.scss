@@ -8,7 +8,7 @@
 
 body {
     background: $blue_palette_1;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Vollkorn SC', serif;
     letter-spacing: 1.5px;
 }
 
@@ -41,6 +41,13 @@ header {
             text-align: right;
             padding: 12px 0 8px 0;
             h3 {
+                letter-spacing: 0px;
+                color: $blue_palette_9;
+                font-size: 20px;
+                padding-right: 50px;
+            }
+            h3:first-child {
+                letter-spacing: 4px;
                 color: $blue_palette_9;
                 font-size: 20px;
                 padding-right: 50px;
@@ -57,15 +64,11 @@ header {
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
         .navbar-brand {
            display: none;
-        }
-
-        .navbar-toggler-icon{
-            
+           transform: scale(.8) translateY(-2px);
         }
         
         .navbar-nav{
-            margin: 0 auto;
-            
+            margin: 0 auto;  
         }
         a {
             color: $blue_palette_1 !important;
@@ -81,7 +84,7 @@ header {
         }
         a:hover {
             color: $blue_palette_1;
-            background-color: $blue_palette_7;
+            background-color: $blue_palette_8;
         }
         .brand-button{
             display: none;
@@ -95,7 +98,6 @@ header {
                 font-size: 16px !important;
             } 
             .brand-button{
-                display: block;
                 img{
                     padding: 12px 0;
                     transform: translateY(-5px)
@@ -122,10 +124,11 @@ header {
                     padding: 50px 0;
                 }
             h4, h5{
+                font-family: 'Lato', sans-serif;
                 text-align: center;
                 line-height: 2;
                 padding: 20px 0px;
-                font-size: 30px;
+                font-size: 26px;
             }
             button{
                 display: block;
@@ -154,7 +157,7 @@ header {
             padding-left: 0px;
             margin: 0;
             text-align: left;
-            font-size: 40px;
+            font-size: 32px;
             letter-spacing: 5px;
             span{
                 margin-right: 10px;
@@ -162,6 +165,7 @@ header {
             }
         }
         p{
+            font-family: 'Lato', sans-serif;
             color: $blue_palette_8;            
             text-align: justify;
             font-size: 20px;
@@ -188,7 +192,7 @@ header {
 
 .about{
     background-color: black;
-    background-image: url("../img/buildings.jpeg");
+    background-image: url("../img/budynki.jpeg");
     background-size: cover;
     background-attachment: fixed;
     .blend{
@@ -196,28 +200,32 @@ header {
         padding-bottom: 50px;
 
         h2{
+            font-family: 'Vollkorn SC', serif;
             font-size: 50px;
             margin: 100px 0 50px 0;
             color: $blue_palette_1;
         }
         
         h3{
-            font-weight: 700;
-            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
             line-height: 2;
             letter-spacing: 5px;
             color: $blue_palette_1;  
         }
 
-        p{
+        p{  
+            font-family: 'Lato', sans-serif;
             font-size: 18px;
             line-height: 1.8;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
             color: $blue_palette_1;
             padding: 20px 0;
+            text-align: justify;
         }
 
         a{
+            font-family: 'Lato', sans-serif;
             color: $blue_palette_1;
             text-decoration: none;
             margin: 0 auto;
@@ -291,9 +299,18 @@ header {
 
 .contact{
     margin-bottom: 50px;
+    h2{
+        text-align: center !important;
+        display: block;
+        font-size: 50px;
+        text-align: left;
+        color: $blue_palette_9;
+        font-weight: 700;
+        margin: 60px 15px;;
+    }
 .map{
     padding: 30px;
-    padding-top: 100px; 
+    padding-top: 0px; 
     
     h2{
         font-size: 50px;
@@ -301,34 +318,30 @@ header {
         color: transparent;
         font-weight: 700;
         margin-bottom: 60px;
+        display: none;
     }
 
     div{
         width: 500px;
         margin: 0 auto;
         iframe{
-            border-radius: 20px;
+            width: 500px;
         }
     }
 }
 
     .contact-big{
         padding: 30px;
-        padding-top: 100px; 
-        
-        h2{
-            font-size: 50px;
-            text-align: left;
-            color: $blue_palette_9;
-            font-weight: 700;
-            margin-bottom: 60px;
-        }
+        padding-top: 0px;      
         div{
-            background-color: $blue_palette_3;
+            background-color: $blue_palette_1;
             border-radius: 20px;
             padding: 20px;
             padding-bottom: 30px;
+            width: 500px;
+            margin: 0 auto;
         h3 {
+            font-family: 'Lato', sans-serif;
             text-align: center;
             font-size: 32px;
             color: $blue_palette_9;
@@ -339,6 +352,7 @@ header {
 
         }
         span{
+            font-family: 'Lato', sans-serif;
             color: black;
             font-size: 20px;
             display: block;
@@ -401,14 +415,14 @@ footer{
 .services-element{
     background-color: $blue_palette_9;
     margin: 50px 0;
-    border-radius: 20px;
-    color: $blue_palette_1;
+    border-radius: 10px;
+    color: $blue_palette_2;
     box-shadow: inset 5px 5px 20px 0 rgba(0, 0, 0, 1);
     background-color: black;
     background-size: cover;
     background-attachment: fixed;
     .blend{
-        background-color: rgba(1, 20, 48, 0.925);
+        background-color: rgba(4, 20, 51, 0.960);
         padding: 30px;
         border-radius: 20px;
     }
@@ -422,6 +436,7 @@ footer{
         padding-left: 20px;
         list-style: square;
         li{
+            font-family: 'arial', sans-serif;
             font-size: 18px;
             line-height: 38px;
             letter-spacing: 3px;
@@ -443,10 +458,40 @@ footer{
     background-image: url("../img/bhp.jpeg");
 }
 
-.ddd{
-    margin: 0 auto;
+// ==========About==========
+
+.about-full{
+    .container{
+        background-color: $blue_palette_9;
+        padding: 90px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+    }
+    //background-color: rgba(4, 15, 31, 0.8);
+    padding-bottom: 50px;
+
+    h2{
+        font-size: 40px;
+        margin-bottom: 50px;
+        color: $blue_palette_2;
+    }
+    
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.8;
+        letter-spacing: 2px;
+        color: $blue_palette_2;
+        padding: 20px 0;
+        text-align: justify;
+    }
+}
+
+.about-big-img{
+    margin: 80px auto 0 auto;
     display: block;
-    height: 400px;
+    height: 450px;
 }
 
 @import 'media';
