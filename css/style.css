@@ -209,6 +209,44 @@ header .head-image .blend .container button:hover {
   cursor: pointer;
 }
 
+.service-modal-button {
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.service-modal-button:hover {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  top: calc(50vh - 240px);
+  font-family: 'lato';
+}
+
+.modal p {
+  font-size: 20px;
+  color: #041333;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #041333;
+  border: 1px solid #08306b;
+}
+
+.modal button:hover {
+  color: #f7fbff;
+  background-color: #08306b;
+  border: 1px solid #08306b;
+}
+
 .about {
   background-color: black;
   background-image: url("../img/budynki.jpeg");
@@ -462,10 +500,16 @@ footer {
   background-attachment: fixed;
 }
 
+.services-element .blend:hover {
+  background-color: #041333;
+}
+
 .services-element .blend {
-  background-color: rgba(4, 20, 51, 0.96);
+  background-color: rgba(4, 20, 51, 0.89);
   padding: 30px;
   border-radius: 20px;
+  -webkit-transition: all ease 1.5s;
+  transition: all ease 1.5s;
 }
 
 .services-element h2 {
@@ -481,10 +525,10 @@ footer {
 }
 
 .services-element ol li {
-  font-family: 'arial', sans-serif;
-  font-size: 18px;
+  font-family: 'lato', sans-serif;
+  font-size: 20px;
   line-height: 38px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-shadow: 2px 2px 3px black;
 }
 
@@ -757,6 +801,4 @@ footer {
     width: 300px;
   }
 }
- 
-
- /*# sourceMappingURL= style.css.map */
+/*# sourceMappingURL=style.css.map */
