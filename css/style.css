@@ -169,29 +169,25 @@ header .head-image .blend .container button:hover {
 }
 
 .services .service-1, .services .service-2, .services .service-3 {
-  margin-top: 20px;
+  margin-top: 60px;
   color: #041333;
   padding: 30px;
 }
 
 .services .service-1 h2, .services .service-2 h2, .services .service-3 h2 {
-  padding: 30px;
-  padding-left: 0px;
-  margin: 0;
-  text-align: left;
-  font-size: 32px;
+  text-align: center;
+  font-size: 50px;
   letter-spacing: 5px;
 }
 
 .services .service-1 h2 span, .services .service-2 h2 span, .services .service-3 h2 span {
-  margin-right: 10px;
   text-shadow: 4px 4px 0.3px rgba(8, 82, 156, 0.623);
 }
 
 .services .service-1 p, .services .service-2 p, .services .service-3 p {
   font-family: 'Lato', sans-serif;
   color: #08306b;
-  text-align: justify;
+  text-align: center;
   font-size: 20px;
   letter-spacing: 2px;
 }
@@ -264,7 +260,7 @@ header .head-image .blend .container button:hover {
 }
 
 .about .blend .about-img {
-  border-radius: 18px;
+  border-radius: 10px;
   padding: 0;
   -webkit-box-shadow: 10px 15px 0px 0 #2171b5;
           box-shadow: 10px 15px 0px 0 #2171b5;
@@ -458,7 +454,7 @@ footer {
   background-color: #041333;
   margin: 50px 0;
   border-radius: 10px;
-  color: #c9d1d8;
+  color: #d2dae0;
   -webkit-box-shadow: inset 5px 5px 20px 0 black;
           box-shadow: inset 5px 5px 20px 0 black;
   background-color: black;
@@ -488,7 +484,7 @@ footer {
   font-family: 'arial', sans-serif;
   font-size: 18px;
   line-height: 38px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-shadow: 2px 2px 3px black;
 }
 
@@ -522,17 +518,18 @@ footer {
 }
 
 .about-full h2 {
+  letter-spacing: 2px;
   font-size: 40px;
   margin-bottom: 50px;
-  color: #c9d1d8;
+  color: #d2dae0;
 }
 
 .about-full p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.8;
-  letter-spacing: 2px;
-  color: #c9d1d8;
+  letter-spacing: 0px;
+  color: #d2dae0;
   padding: 20px 0;
   text-align: justify;
 }
