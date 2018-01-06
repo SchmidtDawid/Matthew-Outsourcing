@@ -584,6 +584,12 @@ footer {
   height: 450px;
 }
 
+.spacemaker {
+  height: calc(100vh - 335px);
+  padding-top: 10vh;
+  min-height: 300px;
+}
+
 @media (max-width: 575px) {
   header .contact-header .brand h1 {
     text-align: center;

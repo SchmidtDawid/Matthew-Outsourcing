@@ -529,4 +529,12 @@ footer{
     height: 450px;
 }
 
+// ==========Contact==========
+
+.spacemaker{
+    height: calc(100vh - 335px);
+    padding-top: 10vh;
+    min-height: 300px;
+}
+
 @import 'media';
